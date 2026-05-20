@@ -1,104 +1,57 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nordtor</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#07111f;font-family:Arial,Helvetica,sans-serif;color:#fff}
+.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:60px;background:radial-gradient(circle at top left,#11243d 0%,#07111f 45%),#07111f}
+.container{width:100%;max-width:1400px;display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center}
+.logo img{width:100%;max-width:850px;filter:brightness(1.1) contrast(1.05)}
+.right{border-left:1px solid rgba(255,255,255,.12);padding-left:50px}
+.item{margin-bottom:42px}
+.item h2{font-size:30px;margin-bottom:14px;color:#fff}
+.item p{font-size:17px;line-height:1.9;color:#9fb0c3}
+.bottom{background:#0b1728;text-align:center;padding:100px 20px;border-top:1px solid rgba(255,255,255,.06)}
+.bottom h3{font-size:52px;margin-bottom:24px}
+.bottom p{max-width:850px;margin:auto;line-height:1.9;color:#93a4b7;font-size:18px}
+@media(max-width:900px){.container{grid-template-columns:1fr}.right{border:none;padding:0}.hero{padding:40px 24px}.bottom h3{font-size:38px}}
+</style>
+</head>
 
-body{
-    background:#07111f;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#ffffff;
-}
+<body>
+<section class="hero">
+<div class="container">
+  <div class="logo">
+    <img src="logo.png" alt="Nordtor Logo">
+  </div>
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:60px;
-    background:
-    radial-gradient(circle at top left,#11243d 0%,#07111f 45%),
-    #07111f;
-}
+  <div class="right">
+    <div class="item">
+      <h2>通道 · 连接</h2>
+      <p>门框象征开放的通道与连接，代表 Nordtor 作为物流枢纽的核心作用。</p>
+    </div>
+    <div class="item">
+      <h2>路径 · 前进</h2>
+      <p>从门框延伸的弧线路径象征物流流动与前进，连接世界与未来。</p>
+    </div>
+    <div class="item">
+      <h2>稳定 · 可靠</h2>
+      <p>坚实的结构与平衡比例传递可靠、专业、值得信赖的品牌形象。</p>
+    </div>
+    <div class="item">
+      <h2>全球 · 未来</h2>
+      <p>面向全球视野与布局，连接世界，通达未来。</p>
+    </div>
+  </div>
+</div>
+</section>
 
-.container{
-    width:100%;
-    max-width:1400px;
-    display:grid;
-    grid-template-columns:1.2fr 0.8fr;
-    gap:80px;
-    align-items:center;
-}
-
-.logo img{
-    width:100%;
-    max-width:850px;
-    filter:
-      brightness(1.1)
-      contrast(1.05);
-}
-
-.right{
-    border-left:1px solid rgba(255,255,255,0.12);
-    padding-left:50px;
-}
-
-.item{
-    margin-bottom:42px;
-}
-
-.item h2{
-    font-size:30px;
-    margin-bottom:14px;
-    color:#ffffff;
-    letter-spacing:1px;
-}
-
-.item p{
-    font-size:17px;
-    line-height:1.9;
-    color:#9fb0c3;
-}
-
-.bottom{
-    background:#0b1728;
-    text-align:center;
-    padding:100px 20px;
-    border-top:1px solid rgba(255,255,255,0.06);
-}
-
-.bottom h3{
-    font-size:52px;
-    margin-bottom:24px;
-    color:#ffffff;
-    letter-spacing:1px;
-}
-
-.bottom p{
-    max-width:850px;
-    margin:auto;
-    line-height:1.9;
-    color:#93a4b7;
-    font-size:18px;
-}
-
-@media(max-width:900px){
-
-.container{
-    grid-template-columns:1fr;
-}
-
-.right{
-    border:none;
-    padding:0;
-}
-
-.hero{
-    padding:40px 24px;
-}
-
-.bottom h3{
-    font-size:38px;
-}
-
-}
+<section class="bottom">
+  <h3>Gateway to Global Supply Chains</h3>
+  <p>Nordtor is building a modern logistics and global supply chain gateway for international trade.</p>
+</section>
+</body>
+</html>
