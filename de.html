@@ -22,11 +22,12 @@ body{background:#07111f;font-family:'Noto Sans SC',Helvetica,sans-serif;color:#f
 .bottom h3{font-size:52px;margin-bottom:24px}
 .bottom p{max-width:850px;margin:auto;line-height:1.9;color:#93a4b7;font-size:18px}
 @media(max-width:900px){.container{grid-template-columns:1fr}.right{border:none;padding:0}.hero{padding:40px 24px}.bottom h3{font-size:38px}}
-  .lang-switch{
+.lang-switch{
     position:fixed;
     top:30px;
     right:40px;
     display:flex;
+    align-items:center;
     gap:18px;
     z-index:999;
 }
@@ -34,9 +35,19 @@ body{background:#07111f;font-family:'Noto Sans SC',Helvetica,sans-serif;color:#f
 .lang-switch a{
     color:#8ea3c7;
     text-decoration:none;
-    font-family:'Rajdhani',sans-serif;
-    font-size:18px;
+
+    font-family:'Rajdhani','Noto Sans SC',sans-serif;
+
+    font-size:20px;
+    font-weight:500;
+
     letter-spacing:2px;
+
+    line-height:1;
+
+    display:flex;
+    align-items:center;
+
     transition:0.3s;
 }
 
