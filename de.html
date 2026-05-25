@@ -1,117 +1,77 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nordtor</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#07111f;font-family:'Noto Sans SC',Helvetica,sans-serif;color:#fff}
-.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:60px;background:radial-gradient(circle at top left,#11243d 0%,#07111f 45%),#07111f}
-.container{width:100%;max-width:1400px;display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center}
-.logo img{width:100%;max-width:850px;filter:brightness(1.1) contrast(1.05)}
-.right{border-left:1px solid rgba(255,255,255,.12);padding-left:50px}
-.item{margin-bottom:42px}
-.item h2{font-family:'Rajdhani',sans-serif;
-
-    font-size:46px;
-
-    font-weight:600;
-
-    letter-spacing:1.5px;
-
-    color:#fff;
-
-    transform:scaleY(0.75);
-
-    transform-origin:left center;
-
-    white-space:nowrap;}
-.item p{font-size:17px;line-height:1.9;color:#9fb0c3}
-.bottom{background:#0b1728;text-align:center;padding:100px 20px;border-top:1px solid rgba(255,255,255,.06)}
-.bottom h3{font-size:52px;margin-bottom:24px}
-.bottom p{max-width:850px;margin:auto;line-height:1.9;color:#93a4b7;font-size:18px}
-@media(max-width:900px){.container{grid-template-columns:1fr}.right{border:none;padding:0}.hero{padding:40px 24px}.bottom h3{font-size:38px}}
-.lang-switch{
-    position:fixed;
-    top:30px;
-    right:40px;
-    display:flex;
-    align-items:center;
-    gap:18px;
-    z-index:999;
-}
-
-.lang-switch a{
-    color:#8ea3c7;
-    text-decoration:none;
-
-    font-family:'Rajdhani','Noto Sans SC',sans-serif;
-
-    font-size:20px;
-    font-weight:500;
-
-    letter-spacing:2px;
-
-    line-height:1;
-
-    display:flex;
-    align-items:center;
-
-    transition:0.3s;
-}
-
-.lang-switch a:hover{
-    color:#ffffff;
-}
+body{background:#07111f;font-family:'Rajdhani','Noto Sans SC',sans-serif;color:#fff;overflow-x:hidden}
+.hero{min-height:92vh;display:flex;justify-content:center;align-items:center;padding:60px;background:radial-gradient(circle at top left,#11243d 0%,#07111f 45%),#07111f}
+.container{width:100%;max-width:1400px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.logo{margin-bottom:28px}
+.logo img{width:100%;max-width:760px;filter:brightness(1.1) contrast(1.05)}
+.right{text-align:center}
+.item{margin-bottom:6px}
+.item h2{font-family:'Rajdhani',sans-serif;font-size:72px;font-weight:600;letter-spacing:2px;color:#fff;transform:scaleY(.72);transform-origin:center;white-space:nowrap;line-height:1}
+.item.small h2{font-size:48px;margin-top:8px}
+.lang-switch{position:fixed;top:30px;right:40px;display:flex;align-items:center;gap:18px;z-index:999}
+.lang-switch a{color:#8ea3c7;text-decoration:none;font-family:'Rajdhani',sans-serif;font-size:22px;font-weight:600;letter-spacing:2px;line-height:1;display:flex;align-items:center;transition:.3s}
+.lang-switch a:hover{color:#fff}
+.bottom{background:#0b1728;text-align:center;padding:52px 20px;border-top:1px solid rgba(255,255,255,.06)}
+.bottom h3{font-family:'Rajdhani',sans-serif;font-size:48px;font-weight:600;letter-spacing:1px;transform:scaleY(.82);transform-origin:center;margin-bottom:14px;color:#fff;line-height:1}
+.bottom p{max-width:none;white-space:nowrap;margin:auto;line-height:1.6;color:#93a4b7;font-size:18px;font-family:'Rajdhani',sans-serif;font-weight:500;letter-spacing:.5px}
+footer{padding:38px 60px;background:#06101d;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;color:#71839a;font-size:14px}
+.footer-links{display:flex;gap:28px}
+.footer-links a{color:#71839a;text-decoration:none;transition:.3s}
+.footer-links a:hover{color:#fff}
+@media(max-width:900px){.hero{padding:40px 24px}.logo img{max-width:540px}.item h2{font-size:46px}.item.small h2{font-size:34px}.bottom h3{font-size:38px}.bottom p{white-space:normal}footer{flex-direction:column;gap:20px;align-items:flex-start}}
+@media(max-width:600px){.item h2{font-size:34px}.item.small h2{font-size:26px}.lang-switch{top:22px;right:24px}.lang-switch a{font-size:18px}}
 </style>
 </head>
 
 <body>
-  <div class="lang-switch">
+
+<div class="lang-switch">
   <a href="index.html">EN</a>
   <a href="de.html">DE</a>
   <a href="zh.html">中文</a>
 </div>
+
 <section class="hero">
-<div class="container">
-  <div class="logo">
-    <img src="logo-negative.png" alt="Nordtor Logo">
-  </div>
+  <div class="container">
+    <div class="logo">
+      <img src="logo-negative.png" alt="Nordtor Logo">
+    </div>
 
-  <div class="right">
-    <div class="item">
-<div class="concept-list">
-
-  <div class="concept-item">
-    <h2>Zugang · Verbindung</h2>
-  </div>
-
-  <div class="concept-item">
-    <h2>Route · Fortschritt</h2>
-  </div>
-
-  <div class="concept-item">
-    <h2>Stabil · Zuverlässig</h2>
-  </div>
-
-  <div class="concept-item">
-    <h2>Global · Zukunft</h2>
-  </div>
-
-</div>
+    <div class="right">
+      <div class="item">
+        <h2>DAS GATEWAY & NETZWERK</h2>
+      </div>
+      <div class="item small">
+        <h2>IN DIE ZUKUNFT</h2>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <section class="bottom">
-  <h3>Gateway to Global Supply Chains</h3>
-  <p>Nordtor is building a modern logistics and global supply chain gateway for international trade.</p>
+  <h3>Gateway für globale Lieferketten</h3>
+  <p>Nordtor entwickelt ein modernes Logistik- und Supply-Chain-Gateway für den internationalen Warenverkehr.</p>
 </section>
+
+<footer>
+  <div>© 2026 Nordtor UG. Alle Rechte vorbehalten.</div>
+  <div class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="privacy.html">Datenschutz</a>
+  </div>
+</footer>
+
 </body>
 </html>
